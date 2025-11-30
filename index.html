@@ -138,6 +138,91 @@
             color: var(--gold);
         }
 
+        /* Cronograma */
+        .cronograma-box {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .cronograma-header {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .cronograma-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cronograma-info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .cronograma-atividades {
+            text-align: left;
+        }
+
+        .cronograma-atividade {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .cronograma-atividade:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .cronograma-horario {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cronograma-horario::before {
+            content: '⏰';
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+
+        .cronograma-descricao {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            padding-left: 25px;
+        }
+
+        .cronograma-descricao ul {
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+        .cronograma-descricao ul li {
+            margin-bottom: 5px;
+            font-size: 0.85rem;
+        }
+
+        .cronograma-descricao ul li::before {
+            content: '•';
+            color: var(--gold-light);
+            font-size: 1rem;
+        }
+
         /* Botão */
         .cta-button {
             display: inline-block;
@@ -213,12 +298,112 @@
                 </ul>
             </div>
 
+            <!-- NOVA SEÇÃO: CRONOGRAMA OFICIAL -->
+            <div class="cronograma-box">
+                <div class="cronograma-header">Cronograma Oficial</div>
+                
+                <div class="cronograma-info">
+                    <div class="cronograma-info-item">
+                        <span class="icon">📅</span> <span>Data: 02/12/2025</span>
+                    </div>
+                    <div class="cronograma-info-item">
+                        <span class="icon">⏰</span> <span>Início: 16h</span>
+                    </div>
+                    <div class="cronograma-info-item">
+                        <span class="icon">⏳</span> <span>Duração total: 4 horas</span>
+                    </div>
+                    <div class="cronograma-info-item">
+                        <span class="icon">⏰</span> <span>Encerramento previsto: 19h30</span>
+                    </div>
+                </div>
+
+                <div class="cronograma-atividades">
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">16h às 16h15</div>
+                        <div class="cronograma-descricao">
+                            <strong>Recepção e Boas-vindas</strong>
+                            <ul>
+                                <li>Acolhida</li>
+                                <li>Boas-vindas</li>
+                                <li>Música ambiente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">16h15 às 16h25</div>
+                        <div class="cronograma-descricao">
+                            <strong>Abertura da Reunião</strong>
+                            <ul>
+                                <li>Oração ou mensagem motivacional</li>
+                                <li>Apresentação da pauta</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">16h25 às 16h45</div>
+                        <div class="cronograma-descricao">
+                            <strong>Reunião de Trabalho</strong>
+                            <ul>
+                                <li>Informes gerais</li>
+                                <li>Assuntos pendentes</li>
+                                <li>Planejamento de atividades futuras</li>
+                                <li>Divisão de tarefas (se necessário)</li>
+                                <li>Espaço para sugestões</li>
+                                <li>Resumo das decisões</li>
+                                <li>Agradecimento</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">16h45 às 17h15</div>
+                        <div class="cronograma-descricao">
+                            <strong>Transição para Confraternização</strong>
+                            <ul>
+                                <li>Encerramento formal</li>
+                                <li>Dinâmica rápida ou palavra de incentivo</li>
+                                <li>Foto do grupo</li>
+                                <li>Organização do ambiente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">17h15 às 18h45</div>
+                        <div class="cronograma-descricao">
+                            <strong>Confraternização</strong>
+                            <ul>
+                                <li>Jantar de gratidão</li>
+                                <li>Conversas e integração</li>
+                                <li>Música leve</li>
+                                <li>Troca de cartões ou lembrancinhas (opcional)</li>
+                                <li>Rodinha de partilhas (opcional)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cronograma-atividade">
+                        <div class="cronograma-horario">18h45 às 19h30</div>
+                        <div class="cronograma-descricao">
+                            <strong>Encerramento Geral</strong>
+                            <ul>
+                                <li>Agradecimentos finais</li>
+                                <li>Avisos importantes</li>
+                                <li>Fechamento do encontro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="details">
                 <div class="detail-item">
                     <span class="icon">📅</span> <strong>02 de Dezembro de 2025</strong>
                 </div>
                 <div class="detail-item">
-                    <span class="icon">⏰</span> <strong>18h30 - Início Puntual</strong>
+                    <span class="icon">⏰</span> <strong>16h - Início Pontual</strong>
                 </div>
                 <div class="detail-item">
                     <span class="icon">📍</span> <span>Local Exclusivo a Confirmar</span>
